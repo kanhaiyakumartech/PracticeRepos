@@ -28,6 +28,7 @@ df.withColumn("Company",lit("Diggibyte"))#.show()
 df.filter((df.location=="mumbai")&(df.nativelanguage=="hindi"))#.show()
 df.filter((df.location=="mumbai")|(df.nativelanguage=="hindi"))#.show()
 df2=df.withColumn("emailid", col("emailid").cast("int"))
+
 df2.show()
 df2.printSchema()
 
